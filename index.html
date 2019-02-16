@@ -29,7 +29,34 @@
 
           gtag('config', 'UA-110281890-2');
       </script>
-      <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="fcbfb376-93e0-44a3-ab56-b1f50e2d5083";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+      <script type="text/javascript">
+          (function () {
+              var head = document.getElementsByTagName("head").item(0);
+              var script = document.createElement("script");
+
+              var src = (document.location.protocol == 'https:'
+                  ? 'https://www.formilla.com/scripts/feedback.js'
+                  : 'http://www.formilla.com/scripts/feedback.js');
+
+              script.setAttribute("type", "text/javascript");
+              script.setAttribute("src", src); script.setAttribute("async", true);
+
+              var complete = false;
+
+              script.onload = script.onreadystatechange = function () {
+                  if (!complete && (!this.readyState
+                      || this.readyState == 'loaded'
+                      || this.readyState == 'complete')) {
+                      complete = true;
+                      Formilla.guid = 'cs407f87-8abf-4cb0-986d-c239053dd8be';
+                      Formilla.loadWidgets();
+                  }
+              };
+
+              head.appendChild(script);
+          })();
+      </script>
+
    </head>
    <body class="light_bg" data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="80" data-scroll-animation="true">
       <div id="preloader">
@@ -72,7 +99,7 @@
                   </div>
                   <div class="col-md-7">
                      <div class="row person_details">
-                        <h3>I'm <span>Kamran Jabbar</span></h3>
+                        <h3><span>Kamran Jabbar</span></h3>
                         <h4>Software Engineer and Web Developer</h4>
                            <p>Since 2016, I have served as a Software Engineer, I have been repeatedly recognized for
                               developing innovative solutions for globally deployed software and websites. I am
@@ -99,13 +126,13 @@
                            </ul>
                         </div>
                         <ul class="social_icon">
-                        	<li><a href="https://github.com/kamran-jabbar" target="_blank"><i class="fa fa-github"></i></a></li>
-                           	<li><a href="https://bitbucket.org/kamranjabbar" target="_blank"><i class="fa fa-bitbucket"></i></a></li>
-                        	<li><a href="https://www.linkedin.com/in/kamran-jabbar/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                           	<li><a href="https://join.skype.com/invite/n40wneB2Evbz" target="_blank"><i class="fa fa-skype"></i></a></li>
-                           	<li><a href="https://web.whatsapp.com/send?phone=923068662017" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                           	<li><a href="https://stackoverflow.com/users/6372637/kamran-jabbar" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
-                           	<li><a href="https://web.facebook.com/kamrnjabbar" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://github.com/kamran-jabbar" target="_blank"><i class="fa fa-github"></i></a></li>
+                              <li><a href="https://bitbucket.org/kamranjabbar" target="_blank"><i class="fa fa-bitbucket"></i></a></li>
+                           <li><a href="https://www.linkedin.com/in/kamran-jabbar/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                              <li><a href="https://join.skype.com/invite/n40wneB2Evbz" target="_blank"><i class="fa fa-skype"></i></a></li>
+                              <li><a href="https://web.whatsapp.com/send?phone=923068662017" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                              <li><a href="https://stackoverflow.com/users/6372637/kamran-jabbar" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                              <li><a href="https://web.facebook.com/kamrnjabbar" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         </ul>
                      </div>
                   </div>
@@ -233,14 +260,14 @@
                      </a>
                      <h5>Dam United for Technology</h5>
                   </div>
-                  <div class="education_item wow fadeInUp animated" data-line="B" style="margin-top: 80px;">
+                  <div class="education_item wow fadeInUp animated b_section" data-line="B">
                      <h6>Oct 2016-Oct 2017</h6>
                      <a target="_blank" href="http://www.techleadz.com/">
                         <h4>Senior Web Developer</h4>
                      </a>
                      <h5>Techleadz</h5>
                   </div>
-                  <div class="education_item wow fadeInUp animated" data-line="A" style="margin-top: 75px;">
+                  <div class="education_item wow fadeInUp animated a_section" data-line="A">
                      <h6>Feb 2016-April 2017</h6>
                      <a href="http://www.fiverr.com/kamranjabbar" target="_blank">
                         <h4>Professional Freelancer</h4>
@@ -268,14 +295,14 @@
                      </a>
                      <h5>Punjab College G.T. Road Jhelum</h5>
                   </div>
-                  <div class="education_item wow fadeInUp animated" data-line="B" style="margin-top: 80px;">
+                  <div class="education_item wow fadeInUp animated b_section" data-line="B">
                      <h6>2009-2010</h6>
                      <a target="_blank" href="https://www.google.com/maps/dir/''/Govt.+Comprehensive+High+School+Jhelum/data=!4m5!4m4!1m0!1m2!1m1!1s0x391f911e91cc0b63:0xe5f51464675e1b8d?sa=X&ved=0ahUKEwi_8Kydle7UAhUFqY8KHbWBDLsQ9RcIdzAP">
                         <h4>Secondary School</h4>
                      </a>
                      <h5>Govt. Comprehensive High School Jhelum</h5>
                   </div>
-                  <div class="education_item wow fadeInUp animated" data-line="A" style="margin-top: 75px;">
+                  <div class="education_item wow fadeInUp animated a_section" data-line="A">
                      <h6>2008</h6>
                      <a target="_blank" href="https://www.google.com/maps/place/Nice+Institute+of+Computer+Education/@32.927831,73.7274274,17z/data=!3m1!4b1!4m5!3m4!1s0x391f90c385a4f58f:0xb4f61204afa94c55!8m2!3d32.927831!4d73.7296161">
                         <h4>Office Management</h4>
