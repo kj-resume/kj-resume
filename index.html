@@ -20,6 +20,7 @@
       <link href="css/responsive.css" rel="stylesheet">
       <link rel="stylesheet" href="css/colors/default.css" title="default">
       <link rel="alternate stylesheet" href="css/colors/past.css" title="past">
+      <link rel="stylesheet" href="css/github-calendar-responsive.css"/>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110281890-2"></script>
       <script>
@@ -64,6 +65,7 @@
                   <ul class="nav navbar-nav navbar-right">
                      <li class="active"><a href="#about">ABOUT ME </a></li>
                      <li><a href="#skill">Skills</a></li>
+                     <li><a href="#contirbutions">Git Contribution</a></li>
                      <li><a href="#experience">Experience</a></li>
                      <li><a href="#project">Projects</a></li>
                      <li><a href="#education">Education</a></li>
@@ -227,6 +229,26 @@
                   </div>
                </div>
             </section>
+            <section class="about_person_area pad" id="contirbutions">
+               <div class="main_title">
+                  <h2>Git Contribution(
+                     <a style="text-transform: none;" href="https://github.com/kamran-jabbar" target="_blank">kamran-jabbar</a>
+                     )
+                  </h2>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <a style="text-transform: none;" href="https://github.com/kamran-jabbar" target="_blank">
+                        <div class="row person_details">
+                           <div class="calendar">
+                              <!-- Loading stuff -->
+                              Loading the data just for you.
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </section>
             <section class="education_area pad" id="experience">
                <div class="main_title">
                   <h2>Experience</h2>
@@ -369,6 +391,7 @@
                   <ul class="nav navbar-nav navbar-right">
                      <li><a href="#about">ABOUT ME </a></li>
                      <li><a href="#skill">Skill</a></li>
+                     <li><a href="#contirbutions">Git Contribution</a></li>
                      <li><a href="#experience">Experience</a></li>
                      <li><a href="#project">Projects</a></li>
                      <li><a href="#education">Education</a></li>
@@ -392,5 +415,11 @@
       <script src="js/jquery.validate.min.js"></script>
       <script src="js/contact.js"></script>
       <script src="js/theme.js"></script>
+      <script src="js/github-calendar.min.js"></script>
+      <script>
+          GitHubCalendar(".calendar", "kamran-jabbar");
+          // or enable responsive functionality
+          GitHubCalendar(".calendar", "kamran-jabbar", { responsive: true });
+      </script>
    </body>
 </html>
